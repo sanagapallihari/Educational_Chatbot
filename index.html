@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Educational Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chatbot-container">
+    <!-- Header Section with Title and Description -->
+    <header class="chatbot-header">
+      <h1>Educational Chatbot 🤖</h1>
+      <p>Your learning assistant for math and vocabulary!</p>
+    </header>
+
+    <!-- Chatbot Content -->
+    <div class="chatbot-content">
+      <div id="chatbot-output" class="chat-output">
+        <p>👋 Hello! I'm your dynamic learning assistant chatbot!</p>
+        <p>I can help you solve math problems or improve your vocabulary dynamically. Let's get started!</p>
+      </div>
+      
+      <!-- Menu and Buttons for Options -->
+      <div class="chatbot-input" id="chatbot-input">
+        <button onclick="chooseOption(1)">Solve a Math Problem</button>
+        <button onclick="chooseOption(2)">Learn New Vocabulary</button>
+        <button onclick="chooseOption(3)">Check My Points</button>
+        <button onclick="chooseOption(4)">Exit</button>
+      </div>
+
+      <!-- Task Options (Next, Exit, Menu) -->
+      <div class="task-options" id="task-options" style="display:none;">
+        <button onclick="nextTask()">Next</button>
+        <button onclick="exitChatbot()">Exit</button>
+        <button onclick="showMenu()">Menu</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
